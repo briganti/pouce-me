@@ -1,0 +1,44 @@
+doctype html
+html(lang='en')
+  head
+    title Michael Vial
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+
+    link(href="//fonts.googleapis.com/css?family=Raleway:400,300,600", rel="stylesheet", type="text/css")
+    link(href='/static/css/main.css', rel="stylesheet", type="text/css")
+  body
+    header#header-top
+      .container
+        span.columns pouce.me
+
+    #video-intro
+      video(src='static/media/intro-1.webm', autoplay='1', loop='1')
+      .container
+        blockquote.one-half.columns
+          p(style='white-space:pre;') I don't mind the buffer
+            | I don't mind the ad
+            | But when the ad buffers
+            | I suffer
+          footer - unknown
+    .container
+      .row
+        .columns
+          h4 A bit about me
+          p I'm a 31 year old javascript dev living south of France, and working for Dailymotion player squad. When I'm not fixing VPAID ads related issues, you can find me diving on a beach volley pitch.
+      hr
+
+      h4 Competence
+      #competence.row
+        .three.columns
+          h6 JavaScript
+          img(src='static/img/javascript-logo.png', width='100%')
+          p ES6, Coffescript, ReactJs, FlightJS, Angular, BackboneJs,Jquery
+
+        .three.columns
+          h6 Node stack
+          img(src='static/img/nodejs-logo.png', width='100%')
+          p NPM, Express, Grunt, Gulp, Webpack, Bower...
+        .three.columns
+          h6 HTML5/CSS3
+          img(src='static/img/html5-logo.png', width='100%')
+          p Sass, Jade

@@ -1,0 +1,44 @@
+@import "skeleton/themes/loader";
+
+#header-top {
+  padding: 1rem 0px;
+  background-color:#C91E49;
+  span {
+    color: #fff;
+    font-size: 1.4em;
+  }
+}
+
+#video-intro {
+  position:relative;
+  margin-bottom:6.5rem;
+  overflow: hidden;
+  video {
+    position:absolute;
+    right: 0;
+    bottom:0;
+    min-width: 100%;
+  }
+  .container {
+    blockquote {
+      color: #fff;
+      text-shadow: 2px 2px 3px #000;
+      p {
+        font-size: 1.8em;
+        margin-bottom:0px;
+      }
+      footer {
+        font-style: italic;
+        font-size: 1.2em;
+      }
+    }
+  }
+}
+
+#competence {
+  h6 {
+    text-align: center;
+    font-weight: bold;
+    color: #C91E49;
+  }
+}
