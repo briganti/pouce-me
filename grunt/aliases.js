@@ -1,8 +1,10 @@
 module.exports = function(grunt) {
   return {
-  	'default': [],
-
-  	'build': [
+    'default': [
+      'express:dev',
+      'watch'
+    ],
+    'build': [
       'sass:dev'
     ]
   };

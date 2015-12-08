@@ -16,4 +16,6 @@ app.get('/', function (req, res) {
 
 app.use('/static', express.static(__dirname + '/public'));
 
-app.listen(app.get('port'));
+app.listen(app.get('port'), function() {
+  console.log('Server has started');
+});
