@@ -23,24 +23,40 @@ html(lang='en')
             | I suffer
           footer - unknown
     .container
+
+      h4 A bit about me
       .row
-        .columns
-          h4 A bit about me
+        .two.columns
+          img#self(src='static/img/me.jpg')
+        .ten.columns
           p I'm a 31 year old javascript dev living south of France, and working for Dailymotion player squad. When I'm not fixing VPAID ads related issues, you can find me diving on a beach volley pitch.
+      
       hr
 
       h4 Competence
       #competence.row
         .three.columns
           h6 JavaScript
-          img(src='static/img/javascript-logo.png', width='100%')
-          p ES6, Coffescript, ReactJs, FlightJS, Angular, BackboneJs,Jquery
+          img(src='static/img/javascript-logo.png')
+          p ES6, Coffesecript, ReactJs, FlightJS, Angular, BackboneJs, Jquery
 
         .three.columns
           h6 Node stack
-          img(src='static/img/nodejs-logo.png', width='100%')
+          img(src='static/img/nodejs-logo.png')
           p NPM, Express, Grunt, Gulp, Webpack, Bower...
         .three.columns
           h6 HTML5/CSS3
-          img(src='static/img/html5-logo.png', width='100%')
+          img(src='static/img/html5-logo.png')
           p Sass, Jade
+
+      hr
+
+      h4 Contact
+      #contact.row
+        .two.columns
+          a(href='https://fr.linkedin.com/in/michael-vial-6bba5475')
+            img(src='static/img/linkedin-logo.png')
+        .two.columns
+          a(href='https://www.facebook.com/michael.vial')
+            img(src='static/img/facebook-logo.png')
+        .eight.columns

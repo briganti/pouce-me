@@ -678,7 +678,8 @@ hr {
 #video-intro {
   position: relative;
   margin-bottom: 6.5rem;
-  overflow: hidden; }
+  overflow: hidden;
+  background-color: #000; }
   #video-intro video {
     position: absolute;
     right: 0;
@@ -694,7 +695,26 @@ hr {
       font-style: italic;
       font-size: 1.2em; }
 
+#self {
+  display: block;
+  margin: 0 auto 2em;
+  width: 80%;
+  border-radius: 50%; }
+
 #competence h6 {
-  text-align: center;
   font-weight: bold;
-  color: #C91E49; }
+  border-left: .5em solid #C91E49;
+  padding-left: .5em; }
+
+#competence img {
+  display: block;
+  width: 60%;
+  margin: 0 auto; }
+
+#competence p {
+  margin-top: 1em; }
+
+#contact img {
+  display: block;
+  width: 60%;
+  margin: 0 auto 2em; }
