@@ -1,12 +1,13 @@
 doctype html
 html(lang='en')
   head
-    title Michael Vial
+    title Pouce.me
     meta(name="viewport", content="width=device-width, initial-scale=1")
 
     link(href="//fonts.googleapis.com/css?family=Raleway:400,300,600", rel="stylesheet", type="text/css")
     link(href='/static/css/main.css', rel="stylesheet", type="text/css")
 
+    script(src='static/js/three.min.js')
     script(src='//localhost:35729/livereload.js')
 
     script
@@ -21,26 +22,41 @@ html(lang='en')
   body
     header#header-top
       .container
-        span.columns pouce.me
+        span.columns
+          img(src='static/img/logo.svg')
+          | pouce.me
 
-    #video-intro
-      video(src='static/media/intro-1.webm', autoplay='1', loop='1')
-      .container
-        blockquote.one-half.columns
-          p(style='white-space:pre;') I don't mind the buffer
-            | I don't mind the ad
-            | But when the ad buffers
-            | I suffer
-          footer - unknown
+    #container
+    //- #video-intro
+    //-   video(src='static/media/intro-1.webm', autoplay='1', loop='1')
+    //-   .container
+    //-     blockquote.one-half.columns
+    //-       p(style='white-space:pre;') I don't mind the buffer
+    //-         | I don't mind the ad
+    //-         | But when the ad buffers
+    //-         | I suffer
+    //-       footer - unknown
     .container
 
       h4 A bit about me
-      .row
+      #intro.row
         .two.columns
           img#self(src='static/img/me.jpg')
         .ten.columns
-          p I'm a 31 year old javascript dev living south of France, and working for Dailymotion player squad. When I'm not fixing VPAID ads related issues, you can find me diving on a beach volley pitch.
-      
+          p I'm a 31 year old javascript developer living in the french riviera. I'm a former Oxford Brookes university student and I now work for Dailymotion as a html5 player engineer. When I'm not sitting in front of a screen you can find me skiing or diving on a beach volley pitch.
+          ul
+            li
+              a(href='https://fr.linkedin.com/in/michael-vial-6bba5475')
+                img(src='static/img/linkedin-logo.png')
+            li
+              a(href='https://www.facebook.com/michael.vial')
+                img(src='static/img/facebook-logo.png')
+      hr
+
+      h4 What I do
+      #whatido.row
+        iframe#player(frameborder='0' width="480" height="270" src='http://www.dailymotion.com/embed/video/x2m8jjy' allowfullscreen)
+
       hr
 
       h4 Competence
@@ -59,14 +75,4 @@ html(lang='en')
           img(src='static/img/html5-logo.png')
           p Sass, Jade
 
-      hr
-
-      h4 Contact
-      #contact.row
-        .two.columns
-          a(href='https://fr.linkedin.com/in/michael-vial-6bba5475')
-            img(src='static/img/linkedin-logo.png')
-        .two.columns
-          a(href='https://www.facebook.com/michael.vial')
-            img(src='static/img/facebook-logo.png')
-        .eight.columns
+      script(src='static/js/main.js')

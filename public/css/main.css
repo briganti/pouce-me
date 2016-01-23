@@ -669,31 +669,29 @@ hr {
   height: 0; }
 
 #header-top {
-  padding: 1rem 0px;
-  background-color: #C91E49; }
+  height: 40px;
+  padding: 1rem 0px; }
   #header-top span {
-    color: #fff;
-    font-size: 1.4em; }
+    color: #000;
+    font-size: 1.4em;
+    line-height: 40px;
+    text-indent: 50px; }
+    #header-top span img {
+      position: absolute;
+      top: 0;
+      left: 0; }
 
-#video-intro {
-  position: relative;
-  margin-bottom: 6.5rem;
-  overflow: hidden;
-  background-color: #000; }
-  #video-intro video {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    min-width: 100%; }
-  #video-intro .container blockquote {
-    color: #fff;
-    text-shadow: 2px 2px 3px #000; }
-    #video-intro .container blockquote p {
-      font-size: 1.8em;
-      margin-bottom: 0px; }
-    #video-intro .container blockquote footer {
-      font-style: italic;
-      font-size: 1.2em; }
+h4 {
+  margin-top: 2.5rem; }
+
+#intro ul {
+  list-style-type: none; }
+  #intro ul li {
+    float: left;
+    height: 4rem;
+    padding-right: 1rem; }
+    #intro ul li img {
+      width: 4rem; }
 
 #self {
   display: block;
@@ -701,9 +699,13 @@ hr {
   width: 80%;
   border-radius: 50%; }
 
+#whatido iframe {
+  display: block;
+  margin: 0 auto; }
+
 #competence h6 {
   font-weight: bold;
-  border-left: .5em solid #C91E49;
+  border-bottom: .1em solid #162158;
   padding-left: .5em; }
 
 #competence img {
@@ -713,8 +715,3 @@ hr {
 
 #competence p {
   margin-top: 1em; }
-
-#contact img {
-  display: block;
-  width: 60%;
-  margin: 0 auto 2em; }
