@@ -7,11 +7,11 @@ module.exports = function(grunt) {
           skeletoncss: '<%= dir.modules.base %>/skeleton-sass'
         },
         public: {
-          base: 'public',
+          base: 'app/public',
           css: '<%= dir.public.base %>/css'
         },
         sass: {
-          base: 'sass'
+          base: 'app/sass'
         }
   	  }
   	}

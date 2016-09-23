@@ -26,7 +26,7 @@ html(lang='en')
           img(src='static/img/logo.svg')
           | pouce.me
 
-    #container
+    canvas#container
     //- #video-intro
     //-   video(src='static/media/intro-1.webm', autoplay='1', loop='1')
     //-   .container
@@ -38,12 +38,16 @@ html(lang='en')
     //-       footer - unknown
     .container
 
-      h4 A bit about me
+      h5 A bit about me
       #intro.row
         .two.columns
           img#self(src='static/img/me.jpg')
         .ten.columns
-          p I'm a 31 year old javascript developer living in the french riviera. I'm a former Oxford Brookes university student and I now work for Dailymotion as a html5 player engineer. When I'm not sitting in front of a screen you can find me skiing or diving on a beach volley pitch.
+          p
+            | I'm a 32 year old web developer living in the french riviera. I'm
+            | a former Oxford Brookes university student and I now work for
+            | Dailymotion as a HTML5 player engineer. I'm passionate about web
+            | and open source projects, and also skiing and playing volleyball.
           ul
             li
               a(href='https://fr.linkedin.com/in/michael-vial-6bba5475')
@@ -53,26 +57,33 @@ html(lang='en')
                 img(src='static/img/facebook-logo.png')
       hr
 
-      h4 What I do
+      h5 What I'm working on
       #whatido.row
-        iframe#player(frameborder='0' width="480" height="270" src='http://www.dailymotion.com/embed/video/x2m8jjy' allowfullscreen)
+        .eight.columns
+          iframe#player(frameborder='0' width="480" height="270" src='http://www.dailymotion.com/embed/video/x2m8jjy?html=1' allowfullscreen)
+        .four.columns
+          h6 Dailymotion Video Player
+          p
+            | I've been working on the HTML5 video player for 2 years, with a
+            | special on the advertising and reporting parts.
 
       hr
 
-      h4 Competence
+      h5 Skills
       #competence.row
         .three.columns
           h6 JavaScript
           img(src='static/img/javascript-logo.png')
-          p ES6, Coffesecript, ReactJs, FlightJS, Angular, BackboneJs, Jquery
+          p ES6, Coffeescript, FlightJS, Angular, jQuery, Vanilla JS
 
         .three.columns
-          h6 Node stack
+          h6 Node
           img(src='static/img/nodejs-logo.png')
-          p NPM, Express, Grunt, Gulp, Webpack, Bower...
+          p NPM, Express, Webpack, Grunt, Gulp, Bower...
+
         .three.columns
           h6 HTML5/CSS3
           img(src='static/img/html5-logo.png')
-          p Sass, Jade
+          p Sass, Jade/Pug
 
-      script(src='static/js/main.js')
+      script(src='js/bundle.js')

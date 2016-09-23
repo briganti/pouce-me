@@ -1,6 +1,7 @@
 'use strict';
 
 let express = require('express');
+let path    = require('path');
 
 let app = express();
 
@@ -15,6 +16,8 @@ app.get('/', function (req, res) {
 });
 
 app.use('/static', express.static(__dirname + '/public'));
+console.log(express.static(__dirname + '../build'));
+app.use('/js', express.static(path.join(__dirname, '..', 'build')));
 
 app.listen(app.get('port'), function() {
   console.log('Server has started');

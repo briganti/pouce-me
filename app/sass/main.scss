@@ -8,25 +8,30 @@
     font-size: 1.4em;
     line-height: 40px;
     text-indent: 50px;
+    margin: 0;
     img {
       position: absolute;
       top: 0;
-      left: 0;
+      left: 0.5rem;
     }
   }
 }
 
-h4 {
-  margin-top:2.5rem;
+h5 {
+  margin-top:2rem;
+  padding:0.5rem;
 }
 
 #intro {
+  p {
+    padding:0 0.5rem;
+  }
   ul {
     list-style-type: none;
     li {
       float:left;
       height:4rem;
-      padding-right:1rem;
+      padding:0.5rem;
       img {
         width:4rem;
       }
@@ -37,14 +42,18 @@ h4 {
 #self {
     display: block;
     margin:0 auto 2em;
-    width:80%;
-    border-radius: 50%;
+    width:100%;
+    max-width:128px;
+    border-radius: 10%;
 }
 
 #whatido {
   iframe {
     display: block;
     margin: 0 auto;
+  }
+  h6 {
+    font-weight: bold;
   }
 }
 
